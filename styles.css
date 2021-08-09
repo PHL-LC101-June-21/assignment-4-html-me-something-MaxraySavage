@@ -1,1 +1,14 @@
-/* Write your CSS here! */
+pre {
+    color: rgb(245, 245, 220);
+    background-color: gray;
+    border-radius: 5px;
+    padding: 20px;
+    padding-right: 200px;
+    display: inline-block;
+}
+
+article {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
