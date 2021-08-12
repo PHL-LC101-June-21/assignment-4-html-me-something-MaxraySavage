@@ -7,6 +7,14 @@
    <body>
       <header>
          <h1>Maxray's Memoranda</h1>
+         <nav id='nav-bar'>
+            <ul>
+               <li class='home-nav'><a href=''>Home</a></li>
+               <li><a href=''>Blog</a></li>
+               <li><a href=''>About Me</a></li>
+
+            </ul>
+         </nav>
       </header>
 
       <main>
@@ -31,6 +39,12 @@
                So an example of an expression would be <code>[1, '+', 5]</code> and we would expect this to equal 6 when solved.
                Now PEMDAS is a <em>convention</em> of written mathematics and it is not the end all. However it is a convention that can be challenging to learn so we want to help people learn it in our game.
                For our purposes, PEMDAS will mean the following:
+               <figure>
+                  <img src="/images/pemdas-diagram.png"
+                       alt="Pemdas Diagram">
+                  <figcaption>Pemdas actually has only 4 steps</figcaption>
+              </figure>
+                  
                <ol>
                   <li><strong>Parentheses</strong> Evaluate terms im parentheses first (we didn't do this inour project)</li>
                   <li><strong>Exponents</strong> Exponents, denoted in javascript with the binary operator <code>**</code>. Under our current definition of an expression, we could have something like <code>[2, '**', 3]</code> and we would expect that to equal 8.</li>
@@ -140,7 +154,7 @@ function evalExpression(expressionArray) {
       </main>
 
       <footer>
-
+         Check out my github here: <a href='https://github.com/MaxraySavage/GHOST'><img class='github-link' src='images/GitHub-Mark/PNG/GitHub-Mark-32px.png'></a>
       </footer>
    </body>
 </html>
