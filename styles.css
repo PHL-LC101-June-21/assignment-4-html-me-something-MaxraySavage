@@ -1,5 +1,6 @@
 body {
     margin: 8px;
+    display: block;
 }
 
 header h1 {
@@ -79,15 +80,8 @@ figure figcaption {
     text-align: center;
 }
 
+
 footer {
     text-align: center;
     margin-top: 20px;
-}
-@keyframes typewriter {
-    0% {
-
-    }
-    100% {
-
-    }
 }
