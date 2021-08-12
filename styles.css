@@ -1,14 +1,43 @@
+body {
+    margin: 8px;
+}
+
+header h1 {
+    text-align:center;
+}
+
 pre {
-    color: rgb(245, 245, 220);
-    background-color: gray;
+    background-color: rgb(168, 161, 161);
     border-radius: 5px;
     padding: 20px;
-    padding-right: 200px;
+    padding-right: 50px;
     display: inline-block;
+    max-width: 95%;
+    border: 5px ridge black;
 }
 
 article {
     display: block;
     margin: auto;
     width: 80%;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#main-heading {
+    color: red;
+}
+
+.funParagraph {
+    color: green;
+}
+
+@keyframes typewriter {
+    0% {
+
+    }
+    100% {
+
+    }
 }

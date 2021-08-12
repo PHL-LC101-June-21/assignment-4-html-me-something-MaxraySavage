@@ -12,7 +12,7 @@
       <main>
 
          <article>
-            <h2>Build the monster: PEMDAS from Scratch</h2>
+            <h2 id="main-heading">Build the monster: PEMDAS from Scratch</h2>
             <p>
                by Maxray
             </p>
@@ -25,7 +25,7 @@
                In this article I'll attempt to describe how I solved this problem using javascript!
             </p>
             <h3>Problem</h3>
-            <p>
+            <p class ="funParagraph" id="testP">
                In order to build this featuree, a function that solves an expression with PEMDAS, we have to define what an expression will look like and what PEMDAS is. 
                For this article we will only consider a rather small subset of possible mathematical expressions. Specifically, an expression will be an array of alternating numbers and binary operators. For our game we did not include parentheses in our problems, we will consider their addition ina future article.
                So an example of an expression would be <code>[1, '+', 5]</code> and we would expect this to equal 6 when solved.
@@ -111,7 +111,7 @@ function evalOperation(operandOne, operator, operandTwo) {
 }
             </code></pre></div>
             We can then use this helper function to replace the array elements from index = nextOperatorIndex - 1, to nextOperatorIndex + 1 with the result of the operation like so:
-            <pre><code>
+            <div class='code-container'><pre><code>
 function evalExpression(expressionArray) {
    const expression = [...expressionArray];
    for(const tierOperands of evalTiers) {
@@ -127,7 +127,7 @@ function evalExpression(expressionArray) {
    }
    return expression[0];
 }         
-            </code></pre>
+            </code></pre></div>
             And with that, we're done!
             </p>
             <h3>Closing thoughts!</h3>
